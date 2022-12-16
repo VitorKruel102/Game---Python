@@ -57,7 +57,13 @@ class Calcular:
 
     @property
     def _gerar_resultado(self: object) -> int:
-        pass
+        if self.operacao == 1:
+            return self.valor1 + self.valor2
+        elif self.operacao == 2:
+            return self.valor1 - self.valor2
+        else:
+            return self.valor1 * self.valor2
+        
 
     def checar_resultado(self: object, resposta: int) -> bool:
         pass
