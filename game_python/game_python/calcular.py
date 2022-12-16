@@ -43,7 +43,17 @@ class Calcular:
 
     @property
     def _gerar_valor(self: object) -> int:
-        pass
+        """Gera valores aleatórios."""
+        if self.dificuldade == 1:
+            return randint(0, 10)
+        elif self.dificuldade == 2:
+            return randint(0, 100)
+        elif self.dificuldade == 3:
+            return randint(0, 1_000)
+        elif self.dificuldade == 4:
+            return randint(0, 10_000)
+        else:
+            return randint(0, 100_000)
 
     @property
     def _gerar_resultado(self: object) -> int:
